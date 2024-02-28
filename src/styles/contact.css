@@ -1,0 +1,30 @@
+.contact{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+}
+.contact-title{
+  color: #849F19;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px
+}
+.contact-body{
+  color:#505E66;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  gap: 32px;
+  height: 32px;
+}
+
+@media screen and (width <=640px) {
+  .contact{
+    align-items: center;
+  }
+  
+}

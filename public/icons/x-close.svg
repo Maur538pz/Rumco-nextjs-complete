@@ -1,0 +1,12 @@
+<!-- <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+<g id="x-close">
+<path id="Icon" d="M19.25 6.75L6.75 19.25M6.75 6.75L19.25 19.25" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg> -->
+
+
+<svg width="26" height="26" viewBox="0 0 26 26" fill="blue" xmlns="http://www.w3.org/2000/svg">
+<g id="x-close">
+<path id="Icon" d="M19.25 6.75L6.75 19.25M6.75 6.75L19.25 19.25" stroke="#B85607" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

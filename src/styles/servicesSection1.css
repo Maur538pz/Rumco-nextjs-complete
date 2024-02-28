@@ -1,0 +1,135 @@
+.title{
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+  letter-spacing: -0.768px;
+  height: 120px;
+  width: 400px;
+  background-color: yellow;
+  margin-bottom: 24px;
+}
+.serviceSection{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap:16px;
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  padding: 80px 104px 48px;
+} 
+.part1{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: rebeccapurple;
+  width: clamp(320px,43.92%,520px);
+
+}
+.cont-descriptions1 , .cont-description2 {
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+  height: auto;
+}
+.cont-part1{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+  } */
+}
+.part2{
+  display: flex;
+  flex-direction: column-reverse;
+  gap:16px;
+  width: clamp(320px,56.08%,664px);
+  /* img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+  } */
+  
+}
+
+.firt-image{
+  object-fit: cover;
+  background-color: black;
+  aspect-ratio: 16/9;
+  height: 100%;
+  
+}
+.second-image{
+  object-fit: cover;
+  background-color: black;
+  aspect-ratio: 16/9;
+  height: 100%;
+}
+
+@media screen and (width <= 1280px) {
+  .serviceSection{
+    padding: 80px 20px 48px;
+  }
+}
+
+@media screen and (width <= 820px) {
+  .serviceSection{
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 20px 24px;
+  }
+  .part1{
+    width: 100%;
+    gap: 24px;
+  }
+  .cont-part1{
+    width: 100%;
+    flex-direction: row-reverse;
+    background-color: aqua;
+  }
+  .firt-image{
+    object-fit: cover;
+    background-color: black;
+    width: 300px;
+    aspect-ratio: 16/9;
+    
+  }
+  .second-image{
+    object-fit: cover;
+    background-color: black;
+    width: 300px;
+    aspect-ratio: 16/9;
+  }
+  .part2{
+    width: 100%;
+    flex-direction: row;
+  }
+  .title{
+    width: 100%;
+    margin-bottom: 0px;
+    height: auto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  
+}
+@media screen and (width <= 640px) {
+  .cont-part1{
+    flex-direction: column;
+    align-items: center;
+  }
+  .part2{
+    flex-direction: column;
+    align-items: center;
+  }
+  .firt-image, .second-image {
+    width: clamp(280px, 100% ,336px);
+  }
+  
+}

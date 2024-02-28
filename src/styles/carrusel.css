@@ -1,0 +1,146 @@
+/* *{
+  box-sizing: border-box;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: rgb(183, 252, 8);
+  display: flex;
+  z-index: 500;
+}
+.img{
+  display: none;
+  position: absolute;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+  right:-100%;
+  transition: transform 2s cubic-bezier(1,0,1,-0.07);
+  opacity: 50%;
+  
+}
+
+.onfocusimg{
+  transform: translateX(-100%);
+  transition: transform 1s linear;
+  z-index: 9999;
+} 
+.nav-index-img{
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  background-color: rgba(127, 255, 212, 0.315);
+}
+.indexImg{
+  position: relative;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  background-color: #B3C3CB;
+  cursor: pointer;
+}
+
+.img-selected{
+  
+  background-color: #849F19;
+}
+.main-carrusel{
+  width: 100%;
+  height: 500px; 
+  position: relative;
+  background-color: rgba(10, 54, 95, 0.418);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:8px;
+} */
+*{
+  box-sizing: border-box;
+}
+.main-carrusel{
+  position: relative;
+  height: 540px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+
+  
+}
+
+.container-carrusel{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(183, 252, 8, 0.596);
+  display: flex;
+  z-index: 500;
+  overflow: hidden;
+}
+.img{
+  position: absolute;
+  object-fit: cover;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+  transform: translateX(100%);
+  transition: transform 2s cubic-bezier(1,0,1,-0.07);
+}
+.nav-index-img{
+  display: flex;
+  justify-content: center;
+  gap:10px;
+}
+.onfocusimg{
+  transform: translateX(0px);
+  transition: transform 1s linear;
+  z-index: 9999;
+} 
+
+.indexImg{
+  position: relative;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  background-color: #B3C3CB;
+  cursor: pointer;
+}
+.img-selected{
+  
+  background-color: #849F19;
+}
+
+@media screen and (width <=1280px) {
+  .main-carrusel{
+    height: 502px;
+  }
+  
+}
+
+@media screen and (width <=820px) {
+  .main-carrusel{
+    height: 232px;
+  }
+  
+}
+
+@media screen and (width <=640px) {
+  .main-carrusel{
+    height: 316px;
+  }
+  
+}
+
+@media screen and (width <=320px) {
+  .main-carrusel{
+    height: 232px;
+    padding: 0px 20px;
+  }
+  
+}
