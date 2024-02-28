@@ -4,17 +4,17 @@
   box-sizing: border-box;
 }
 .main-section-2{
+  background-color: #E1EBF0;
   position: relative;
   display: flex; 
   justify-content: center;
-  background-color: aquamarine; 
   padding: 0px 104px 80px;
 }
 .service-section-container{
   width: clamp(320px,100%,1200px);
   display: flex;
   gap:16px;
-  background-color: black;
+
 }
 .first-article-services2, .second-article-services2{
   display: flex;
@@ -78,7 +78,6 @@
   .main-section-2{
     width: 100%;
     padding: 0px 20px 32px;
-    background-color: aqua;
   }
   .img-services2{
     width: 280px;

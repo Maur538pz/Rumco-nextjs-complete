@@ -6,7 +6,6 @@
   letter-spacing: -0.768px;
   height: 120px;
   width: 400px;
-  background-color: yellow;
   margin-bottom: 24px;
 }
 .serviceSection{
@@ -14,7 +13,7 @@
   display: flex;
   justify-content: center;
   gap:16px;
-  background-color: rgb(236, 236, 236);
+  background-color: #E1EBF0;
   width: 100%;
   padding: 80px 104px 48px;
 } 
@@ -22,7 +21,6 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background-color: rebeccapurple;
   width: clamp(320px,43.92%,520px);
 
 }
@@ -58,14 +56,14 @@
 
 .firt-image{
   object-fit: cover;
-  background-color: black;
+
   aspect-ratio: 16/9;
   height: 100%;
   
 }
 .second-image{
   object-fit: cover;
-  background-color: black;
+
   aspect-ratio: 16/9;
   height: 100%;
 }
@@ -73,6 +71,7 @@
 @media screen and (width <= 1280px) {
   .serviceSection{
     padding: 80px 20px 48px;
+    background-color: red;
   }
 }
 
@@ -89,18 +88,18 @@
   .cont-part1{
     width: 100%;
     flex-direction: row-reverse;
-    background-color: aqua;
+
   }
   .firt-image{
     object-fit: cover;
-    background-color: black;
+
     width: 300px;
     aspect-ratio: 16/9;
     
   }
   .second-image{
     object-fit: cover;
-    background-color: black;
+
     width: 300px;
     aspect-ratio: 16/9;
   }

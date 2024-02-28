@@ -5,11 +5,13 @@
 }
 .container-notifications{
   position: fixed;
+  left: 50%;
   z-index: 99999;
   height: 100px;
-  width: 100%;
+  width:clamp(400px, 100%, 280px);
+  transform: translateX(-50%);
 }
-.notification{
+.notification{ 
   position: relative;
   margin: auto;
   width: clamp(400px, 100%, 280px);

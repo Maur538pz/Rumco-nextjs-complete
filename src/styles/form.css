@@ -10,12 +10,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #203f4e;
   width: 100%;
 }
 .buttonSubmit{
   margin-top: 40px;
-  background-color: #D5660D;
   height: 56px;
   width: 192px;
   padding: 16px;
@@ -30,10 +28,10 @@
   justify-content: center;
   border-radius: 4px;
   cursor: pointer;
+  background-color: #E57820;
 }
 .firts-inputs{
   margin-top: 24px;
-  background-color: #272F33;
   width: 100%;
   gap:0px 16px ;
   display: grid;
@@ -131,14 +129,13 @@
 .section-form{
   position: relative;
   /* background-color:#D1DDE3 ; */
-  background-color: rgb(86, 117, 54);
+  background-color:#D1DDE3;
   padding: 80px 208px;
   display: flex;
   justify-content: center;
 }
 .content-form{
   clip-path: circle(90%);
-  background-color: aquamarine;
   display: flex;
   flex-direction: column;
   gap:16px;

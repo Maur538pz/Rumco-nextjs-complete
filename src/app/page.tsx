@@ -5,14 +5,11 @@ import { Notifications} from '@/components/Notifications'
 import { Form2 } from '@/components/Form2';
 import { Footer } from '@/components/Footer';
 import { EsloganBackground } from '@/components/EsloganBackground'
-import { CarruselImages } from '@/components/CarruselImages';
-
 export default function Home() {
   return (
     <main>
-
-      <EsloganBackground/>
       <Notifications/>
+      <EsloganBackground/>
       <SectionHero/>
       <ServicesSection1/>
       <ServicesSection2/>
