@@ -12,7 +12,7 @@ export const CarruselImages = () => {
   const [index, setIndex] = useState(0)
   const [newSelected, setNewSelected] = useState(true)
 
-  useEffect(() => {
+  useEffect(() => { 
      let intervalo = setInterval(() => {
       setIndex(prevState => {
         if (prevState >= size) return 0

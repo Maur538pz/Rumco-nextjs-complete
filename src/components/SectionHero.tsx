@@ -1,5 +1,6 @@
 import '@/styles/sectionHero.css'
-import { CarruselImages } from './CarruselImages'
+import { CarruselImages2 } from '@/components/CarruselImages2'
+import { CarruselImages } from '@/components/CarruselImages'
 
 export const SectionHero = () => {
   return (
@@ -7,9 +8,12 @@ export const SectionHero = () => {
     <section className="card">
       <div className="cont-text">
         <p className="text">Nuestro equipo de expertos se encarga minuciosamente de cada detalle para garantizar la perfección en tu proyecto. <span className='aditionalText'>Calidad en cada paso, para un resultado que superará tus expectativas.</span></p>
-        <button className="button"><a href="#formulario">Contáctanos</a></button>
+        <button className="button-hero-section"><a href="#formulario" className='a-button-hero-section'>Contáctanos</a></button>
       </div>
-      <CarruselImages/>
+      <div className='cont-carrusel-hero'>
+        <CarruselImages2/>
+        {/* <CarruselImages/> */}
+      </div>
     </section>
   </div>
   )

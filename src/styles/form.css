@@ -148,6 +148,7 @@
   transition: clip-path .3s ease;
 }
 
+
 @media screen and (width <=820px) {
   .section-form{
     padding: 40px 80px;

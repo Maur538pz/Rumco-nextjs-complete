@@ -10,6 +10,13 @@
   align-items: center;
   padding: 42px 0px;
 }
+.cont-carrusel-hero{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
 .hero-contain-main::before{
   position: absolute;
   bottom: -0.5px;
@@ -29,23 +36,23 @@
   align-items: center;
   gap:32px;
 }
-.button{
+.button-hero-section{
   background-color: #E57820;
   width: 160px;
   height: 56px;
   padding: 16px;
   border-radius: 4px;
   border:0px;
-  a {
-    color:#F0F6FA;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    text-decoration: none;
-  }
 }
 
+.a-button-hero-section{
+  color:#F0F6FA;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: none;
+}
 .cont-text{
   width: clamp(280px, 100%, 328px);
   /* height: clamp(134px,100%,280px); */

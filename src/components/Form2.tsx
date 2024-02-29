@@ -9,6 +9,7 @@ import { Inputs } from '@/interfaces/Inputs'
 import { postRequest } from '@/utils/sendServer'
 import { useState } from 'react'
 import IconsSendSuccesfully from '../../public/icons/Illustration.svg'
+import { InputTextArea } from '@/components/InputTextArea'
 
 const api = '/api/redirects'
 
@@ -95,14 +96,23 @@ export const Form2 = () => {
           {...( errors.phoneNumber && { helperText: `${errors.phoneNumber.message}`})}
           />
           </div>
-          <Input
+
+          {/* <Input
+          label='Mensaje'
+          register={register}
+          name='message'
+          error={Boolean(errors.message)}
+          {...( errors.message && { helperText: `${errors.message.message}`})}
+          /> */}
+          <InputTextArea
           label='Mensaje'
           register={register}
           name='message'
           error={Boolean(errors.message)}
           {...( errors.message && { helperText: `${errors.message.message}`})}
           />
-          <button type='submit' className='buttonSubmit'>Enviar</button>
+          {/* <textarea cols={10} rows={20} className='input-text-area'></textarea> */}
+          <button type='submit' className='buttonSubmit' >Enviar</button>
         </form>
       </div>
     </section>
