@@ -10,7 +10,7 @@ import { postRequest } from '@/utils/sendServer'
 import { useState } from 'react'
 import IconsSendSuccesfully from '../../public/icons/Illustration.svg'
 
-const api = 'http://localhost:3000/api/redirects'
+const api = '/api/redirects'
 
 
 
