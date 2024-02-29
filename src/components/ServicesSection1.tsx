@@ -1,5 +1,6 @@
 import '@/styles/servicesSection1.css'
 import { Description } from '@/components/Description'
+import image2 from '../../public/images/arquitecturamoderna.jpg'
 
 export const ServicesSection1 = () => {
   return (
@@ -8,7 +9,7 @@ export const ServicesSection1 = () => {
             <h2 className='title'>
                 Servicios personalizados
             </h2>
-            <div className='cont-part1'>
+            <div className='cont-part1'> 
                 <div className='cont-descriptions1'>
                     <Description 
                     title='Construcción' 
@@ -34,7 +35,9 @@ export const ServicesSection1 = () => {
                 text='Transformamos espacios mediante remodelaciones y renovaciones que combinan diseño innovador con calidad constructiva. '
                 textHiden='Desde actualizaciones menores hasta cambios completos, nuestro enfoque es revitalizar tu espacio con estilo y eficiencia.'/>
             </div>
-            <img src="https://raw.githubusercontent.com/Maur538pz/001-Construccion/master/public/images/2doview2.webp" alt="img2" className='second-image'/>
+            {/* <img src="../../public/images/arquitecturamoderna.jpg" alt="img2" className='second-image'/> */}
+            <img src={image2.src} alt="img2" className='second-image'/>
+
 
         </div>
     </section>

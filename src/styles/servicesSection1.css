@@ -45,25 +45,18 @@
   display: flex;
   flex-direction: column-reverse;
   gap:16px;
-  width: clamp(320px,56.08%,664px);
-  /* img{
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-  } */
-  
+  width: clamp(320px,56.08%,664px); 
 }
 
 .firt-image{
   object-fit: cover;
-
   aspect-ratio: 16/9;
   height: 100%;
+  background-color: aquamarine;
   
 }
 .second-image{
   object-fit: cover;
-
   aspect-ratio: 16/9;
   height: 100%;
 }
@@ -71,7 +64,7 @@
 @media screen and (width <= 1280px) {
   .serviceSection{
     padding: 80px 20px 48px;
-    background-color: red;
+    
   }
 }
 
@@ -92,16 +85,14 @@
   }
   .firt-image{
     object-fit: cover;
-
+    height: auto;
     width: 300px;
-    aspect-ratio: 16/9;
     
   }
   .second-image{
     object-fit: cover;
-
     width: 300px;
-    aspect-ratio: 16/9;
+    height: auto;
   }
   .part2{
     width: 100%;

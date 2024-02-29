@@ -32,9 +32,8 @@ export const Form2 = () => {
   }
  
   const handleSubmit2 = async ( data: Inputs) => {
-    setPlayAnimation((prevState) => !prevState)
-    //const res = await postRequest({api, data, onSucces: addNotofiSend, onError: addNotifiError})
-    //console.log(res)
+    const res = await postRequest({api, data, onSucces: addNotofiSend, onError: addNotifiError})
+    console.log(res)
   }
 
   const classForm = playAnimation ? 'content-form animation' : 'content-form'
@@ -42,7 +41,7 @@ export const Form2 = () => {
   const classIconSendSuccesfully = playAnimation ? 'icon-succesfully icon-animation' : 'icon-succesfully'
   const classTextSendAnimation = playAnimation ? 'cont-animation-send_text text-animation' : 'cont-animation-send_text'
   return (
-    <section className='section-form'>
+    <section className='section-form' id='formulario'>
       <div className='cont-animation-send'>
         <div className={classCircle}>
           <IconsSendSuccesfully className={classIconSendSuccesfully}/>
@@ -60,7 +59,6 @@ export const Form2 = () => {
         <form
           onSubmit={handleSubmit(handleSubmit2)}
           className='form'
-          method='POST'
         >
           <div className='firts-inputs'>
           <Input 
