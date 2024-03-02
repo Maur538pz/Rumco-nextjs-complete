@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" style="filter: url('#motion-blur-filter-1');"  >
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="225.27" y1="130.576" x2="225.27" y2="231.216" id="gradient-2" gradientTransform="matrix(0.627064, -2.421541, 11.143391, 2.896264, -2269.530273, 128.165833)">
+      <stop offset="0" style="stop-color: rgb(255, 255, 255);"/>
+      <stop offset="1" style=""/>
+    </linearGradient>
+    <filter id="motion-blur-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%" preset="motion-blur 1 0.5 horizontal">
+      <feGaussianBlur stdDeviation="0.5 0" edgeMode="none"/>
+    </filter>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="225.27" y1="31.213" x2="225.27" y2="131.853" id="gradient-0" gradientTransform="matrix(-1.162552, -2.214043, 5.728932, -3.019243, -2.043793, 1137.86586)">
+      <stop offset="0" style=""/>
+      <stop offset="1" style="stop-color: rgb(255, 255, 255);"/>
+    </linearGradient>
+  </defs>
+  <path d="M 249.713 500.771 C 111.803 500.773 0.003 388.767 0 250.603 C 0 250.601 0 250.598 0 250.596 L 50.006 250.596 C 50.864 360.318 140.075 449 250 449 C 354.987 449 441.08 368.106 449.35 265.248 C 453.795 257.133 462.143 251.367 471.593 250.596 L 475.902 250.596 C 488.433 251.628 497.889 261.625 498.322 274.22 C 486.442 401.305 379.67 500.768 249.713 500.771 Z M 499.415 249 C 499.418 249.506 499.42 250.009 499.42 250.515 L 499.415 250.515 L 499.415 249 Z M 499.038 264.564 C 498.975 265.7 498.905 266.834 498.828 267.965 L 499.038 264.564 Z" style="stroke-width: 25px; paint-order: fill; fill: url('#gradient-2'); filter: url('#motion-blur-filter-0');" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, 0, 0)"/>
+  <path d="M 0 251.175 C -0.003 113.011 111.798 1.002 249.707 1 C 387.617 0.997 499.417 113.003 499.42 251.167 C 499.42 251.17 499.42 251.172 499.42 251.175 L 449.997 251.175 C 449.999 250.784 450 250.392 450 250 C 450 139.543 360.457 50 250 50 C 139.543 50 50 139.543 50 250 C 50 250.392 50.001 250.784 50.003 251.175 L 0.005 251.175 L 0.005 252.771 C 0.002 252.238 0 251.708 0 251.175 Z" style="stroke-width: 25px; paint-order: fill; fill: url('#gradient-0'); filter: url('#motion-blur-filter-0');" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, 0, 0)"/>
+</svg>

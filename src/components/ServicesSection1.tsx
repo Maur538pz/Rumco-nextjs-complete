@@ -1,6 +1,6 @@
 import '@/styles/servicesSection1.css'
 import { Description } from '@/components/Description'
-import image2 from '../../public/images/arquitecturamoderna.jpg'
+import image2 from '../../public/images/arquitecturamoderna.webp'
 
 export const ServicesSection1 = () => {
   return (

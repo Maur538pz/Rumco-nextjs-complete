@@ -22,7 +22,7 @@ export const useNotifications = () => {
       setNotification(prevState => [...prevState,newNotification])
       setTimeout(() => {
         clearNotifications()
-      }, 3000)
+      }, 5000)
 
     }
 
@@ -37,7 +37,8 @@ export const useNotifications = () => {
  
   return {
     notifications,
-    addNotification
+    addNotification,
+    quitarNotificacion: clearNotifications
 
   }
 }

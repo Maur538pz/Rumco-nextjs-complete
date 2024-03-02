@@ -52,3 +52,15 @@
     flex-direction: column-reverse;
   }
 }
+
+
+.icon-footer-redes{
+  fill: #505E66;
+  height: 32px;
+  width: 32px;
+  transition: fill .1s linear;
+}
+
+.icon-footer-redes:hover{
+  fill: #91AF1B;
+}

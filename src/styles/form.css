@@ -29,7 +29,22 @@
   border-radius: 4px;
   cursor: pointer;
   background-color: #E57820;
+  transition: width .2s ease-out;
+  
 }
+.reducer{
+  width: 56px;
+  animation-name: loading-button;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.23,.85,.85,.25);
+}
+
+@keyframes loading-button{
+  0%{transform: rotate(0);}
+  100%{transform: rotate(360deg);}
+}
+
 .firts-inputs{
   margin-top: 24px;
   width: 100%;
@@ -129,8 +144,7 @@
 }
 .section-form{
   position: relative;
-  /* background-color:#D1DDE3 ; */
-  background-color:#D1DDE3;
+  background-color:#D1DDE3 ;
   padding: 80px 208px;
   display: flex;
   justify-content: center;
@@ -169,4 +183,33 @@
   .section-form{
     padding: 40px 20px;
   }
+}
+
+.button-loader-new-icon{
+  background-color: #E57820;
+  width: 30px;
+  height: 30px;
+  /* filter: blur(1px); */
+  animation-name: loading-button;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+
+
+.animation{
+  background-color: #E57820;
+  width: 80px;
+  height: 80px;
+  animation-name: loading-button;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes loading-button{
+  0%{transform: rotate(0);}
+  100%{transform: rotate(360deg);}
 }

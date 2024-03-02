@@ -9,6 +9,7 @@ import { Inputs } from '@/interfaces/Inputs'
 import { postRequest } from '@/utils/sendServer'
 import { useState } from 'react'
 import IconsSendSuccesfully from '../../public/icons/Illustration.svg'
+import LoadButton from '../../public/icons/load-2.svg'
 import { InputTextArea } from '@/components/InputTextArea'
 
 const api = '/api/redirects'
@@ -22,8 +23,24 @@ export const Form2 = () => {
   const { addNotification } = useNotifications()
   const [playAnimation, setPlayAnimation] = useState(false)
 
+
+  //state button
+  const [ clickButtonSend, setClickButtonSend] = useState(false)
+  const onClickSend = () => {
+    setClickButtonSend(prev => !prev)
+  }
+  const classButtonSend = clickButtonSend ? 'buttonSubmit reducer' : 'buttonSubmit'
+
+
+
+
+
+
+  //-----------------------
+
   const  addNotifiError = () => {
     addNotification('error')
+    onClickSend()
   }
 
   const addNotofiSend = () => {
@@ -33,6 +50,8 @@ export const Form2 = () => {
   }
  
   const handleSubmit2 = async ( data: Inputs) => {
+    onClickSend()
+    console.log('enviando datos')
     const res = await postRequest({api, data, onSucces: addNotofiSend, onError: addNotifiError})
     console.log(res)
   }
@@ -96,14 +115,6 @@ export const Form2 = () => {
           {...( errors.phoneNumber && { helperText: `${errors.phoneNumber.message}`})}
           />
           </div>
-
-          {/* <Input
-          label='Mensaje'
-          register={register}
-          name='message'
-          error={Boolean(errors.message)}
-          {...( errors.message && { helperText: `${errors.message.message}`})}
-          /> */}
           <InputTextArea
           label='Mensaje'
           register={register}
@@ -112,7 +123,11 @@ export const Form2 = () => {
           {...( errors.message && { helperText: `${errors.message.message}`})}
           />
           {/* <textarea cols={10} rows={20} className='input-text-area'></textarea> */}
-          <button type='submit' className='buttonSubmit' >Enviar</button>
+          <button type='submit' className={classButtonSend} disabled={clickButtonSend}>
+            {
+            clickButtonSend ? '' : 'Enviar' 
+          }
+          </button>
         </form>
       </div>
     </section>
