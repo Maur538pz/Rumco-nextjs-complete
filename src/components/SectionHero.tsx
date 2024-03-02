@@ -1,6 +1,5 @@
 import '@/styles/sectionHero.css'
 import { CarruselImages2 } from '@/components/CarruselImages2'
-import { CarruselImages } from '@/components/CarruselImages'
 
 export const SectionHero = () => {
   return (
